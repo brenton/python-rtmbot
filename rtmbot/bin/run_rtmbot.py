@@ -25,7 +25,7 @@ def main(args=None):
     if not args:
         args = parse_args()
 
-    config = yaml.load(open(args.config or 'rtmbot.conf', 'r'))
+    config = yaml.load(open(args.config or 'conf/rtmbot.conf', 'r'))
     bot = RtmBot(config)
     try:
         bot.start()
